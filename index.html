@@ -7,7 +7,46 @@
     <title>Calculo Carro</title>
 </head>
 <body>
-    
+
+    <h1>Cadastro de Veículos</h1>
+
+    <!-- FORMULÁRIO -->
+    <form id="formVeiculo">
+
+        <label>Modelo:</label>
+        <input type="text" id="modelo" required>
+
+        <label>Marca:</label>
+        <input type="text" id="marca" required>
+
+        <label>Placa:</label>
+        <input type="text" id="placa" required>
+
+        <label>Ano de Fabricação:</label>
+        <input type="number" id="ano" required>
+
+        <label>Valor do Veículo:</label>
+        <input type="number" id="valor" required>
+
+        <label>Cor do Veículo:</label>
+        <input type="text" id="cor" required>
+
+        <p>Tipo de Combustível:</p>
+
+        <label><input type="radio" name="combustivel" value="gasolina" required> Gasolina</label>
+
+        <label><input type="radio" name="combustivel" value="etanol"> Etanol</label>
+
+        <label><input type="radio" name="combustivel" value="bicombustivel"> Bicombustível</label>
+
+        <label><input type="radio" name="combustivel" value="hibrido"> Híbrido</label>
+
+        <label><input type="radio" name="combustivel" value="eletrico"> Elétrico</label>
+
+        <br><br>
+
+        <button type="submit">Adicionar Veículo</button>
+  
     
 </body>
 </html>
