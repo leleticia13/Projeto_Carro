@@ -18,3 +18,6 @@ if (!combustivel) {
 }
 
 let tipo = combustivel.value;
+
+let anoAtual = new Date().getFullYear();
+let idade = anoAtual - ano;
