@@ -12,41 +12,45 @@
 
     <!-- FORMULÁRIO -->
     <form id="formVeiculo">
+        <div class="inputs">
+            <label>Modelo:</label>
+            <input type="text" id="modelo" required>
 
-        <label>Modelo:</label>
-        <input type="text" id="modelo" required>
+            <label>Marca:</label>
+            <input type="text" id="marca" required>
 
-        <label>Marca:</label>
-        <input type="text" id="marca" required>
+            <label>Placa:</label>
+            <input type="text" id="placa" required>
 
-        <label>Placa:</label>
-        <input type="text" id="placa" required>
+            <label>Ano de Fabricação:</label>
+            <input type="number" id="ano" required>
 
-        <label>Ano de Fabricação:</label>
-        <input type="number" id="ano" required>
+            <label>Valor do Veículo:</label>
+            <input type="number" id="valor" required>
 
-        <label>Valor do Veículo:</label>
-        <input type="number" id="valor" required>
+            <label>Cor do Veículo:</label>
+            <input type="text" id="cor" required>
+        </div>
 
-        <label>Cor do Veículo:</label>
-        <input type="text" id="cor" required>
+        <div class="tipo_Combust">
 
-        <p>Tipo de Combustível:</p>
+            <p>Tipo de Combustível:</p>
 
-        <label><input type="radio" name="combustivel" value="gasolina" required> Gasolina</label>
+            <label><input type="radio" name="combustivel" value="gasolina" required> Gasolina</label>
 
-        <label><input type="radio" name="combustivel" value="etanol"> Etanol</label>
+            <label><input type="radio" name="combustivel" value="etanol"> Etanol</label>
 
-        <label><input type="radio" name="combustivel" value="bicombustivel"> Bicombustível</label>
+            <label><input type="radio" name="combustivel" value="bicombustivel"> Bicombustível</label>
 
-        <label><input type="radio" name="combustivel" value="hibrido"> Híbrido</label>
+            <label><input type="radio" name="combustivel" value="hibrido"> Híbrido</label>
 
-        <label><input type="radio" name="combustivel" value="eletrico"> Elétrico</label>
+            <label><input type="radio" name="combustivel" value="eletrico"> Elétrico</label>
 
-        <br><br>
+        </div>
+        <br>
 
-        <button type="submit">Adicionar Veículo</button>
-  
+         <button type="submit">Adicionar Veículo</button>
+    </form>
     
 </body>
 </html>
