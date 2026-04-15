@@ -44,3 +44,11 @@ if (idade > 20) {
 
     ipvaTexto = "R$ " + ipva.toFixed(2);
 }
+
+let total;
+
+if (idade > 20) {
+    total = seguro;
+} else {
+    total = seguro + ipva;
+}
