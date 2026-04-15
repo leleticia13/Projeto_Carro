@@ -11,3 +11,10 @@ let placa = document.getElementById("placa").value;
 let ano = document.getElementById("ano").value;
 let valor = document.getElementById("valor").value;
 let combustivel = document.querySelector('input[name="combustivel"]:checked');
+
+if (!combustivel) {
+    alert("Escolha o combustível");
+    return;
+}
+
+let tipo = combustivel.value;
