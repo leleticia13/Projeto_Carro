@@ -21,3 +21,5 @@ let tipo = combustivel.value;
 
 let anoAtual = new Date().getFullYear();
 let idade = anoAtual - ano;
+
+let seguro = valor * 0.10;
