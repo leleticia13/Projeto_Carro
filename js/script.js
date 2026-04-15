@@ -23,3 +23,24 @@ let anoAtual = new Date().getFullYear();
 let idade = anoAtual - ano;
 
 let seguro = valor * 0.10;
+
+let ipva = 0;
+let ipvaTexto = "";
+
+if (idade > 20) {
+    ipvaTexto = "Isento";
+} else {
+    if (tipo === "gasolina") {
+        ipva = valor * 0.20;
+    } else if (tipo === "etanol") {
+        ipva = valor * 0.15;
+    } else if (tipo === "bicombustivel") {
+        ipva = valor * 0.10;
+    } else if (tipo === "hibrido") {
+        ipva = valor * 0.08;
+    } else if (tipo === "eletrico") {
+        ipva = valor * 0.02;
+    }
+
+    ipvaTexto = "R$ " + ipva.toFixed(2);
+}
