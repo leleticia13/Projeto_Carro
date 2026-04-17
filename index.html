@@ -50,6 +50,11 @@
             <br>
 
             <button type="submit">Adicionar Veículo</button>
+
+               <!-- BOTÃO LIMPAR -->
+            <div id="limpar">
+                <button type="reset" onclick="reset_btn()">Limpar Formulário</button>
+            </div>
         </form>
     </div>
 
@@ -58,28 +63,12 @@
 
     <div id="veiculoList">
 
-        <div class="card-veiculo">
-            <p><strong>Modelo:</strong> Corolla</p>
-            <p><strong>Marca:</strong> Toyota</p>
-            <p><strong>Placa:</strong> ABC-1234</p>
-            <p><strong>Ano:</strong> 2022</p>
-            <p><strong>Valor:</strong> R$ 90.000</p>
-            <p><strong>Cor:</strong> Prata</p>
-            <p><strong>Combustível:</strong> Gasolina</p>
-        </div>
-
-        <div class="card-veiculo">
-            <p><strong>Modelo:</strong> Civic</p>
-            <p><strong>Marca:</strong> Honda</p>
-            <p><strong>Placa:</strong> XYZ-5678</p>
-            <p><strong>Ano:</strong> 2021</p>
-            <p><strong>Valor:</strong> R$ 85.000</p>
-            <p><strong>Cor:</strong> Preto</p>
-            <p><strong>Combustível:</strong> Flex</p>
+        <div class="card-veiculo" id="card-veiculo">    
         </div>
 
     </div>
 </div>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
