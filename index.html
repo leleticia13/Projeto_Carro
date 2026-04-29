@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/scripts_carro.js" defer></script>
     <title>Calculo Carro</title>
 </head>
 <body>
@@ -14,37 +15,37 @@
         <form id="formVeiculo">
             <div class="inputs">
                 <label>Modelo:</label>
-                <input type="text" id="modelo" required> <br>
+                <input type="text" name="modelo" id="modelo" required> <br>
 
                 <label>Marca:</label>
-                <input type="text" id="marca" required> <br>
+                <input type="text" name="marca" id="marca" required> <br>
 
                 <label>Placa:</label>
-                <input type="text" id="placa" required> <br>
+                <input type="text" name="placa" id="placa" required> <br>
 
                 <label>Ano de Fabricação:</label>
-                <input type="number" id="ano" required> <br>
+                <input type="date" name="anoDeFabricacao" id="anoDeFabricacao" required> <br>
 
                 <label>Valor do Veículo:</label>
-                <input type="number" id="valor" required> <br>
+                <input type="number" name="valorDoVeiculo" id="valorDoVeiculo" required> <br>
 
                 <label>Cor do Veículo:</label>
-                <input type="text" id="cor" required> <br>
+                <input type="text" name="cor" id="cor" required> <br>
             </div>
 
-            <div class="tipo_Combust">
+            <div class="tipo_Combust" name="tipoCombustivel">
 
                 <p>Tipo de Combustível:</p>
 
-                <label><input type="radio" name="combustivel" value="gasolina" required> Gasolina</label>
+                <label><input type="radio" name="tipoCombustivel" value="gasolina" required> Gasolina</label>
 
-                <label><input type="radio" name="combustivel" value="etanol"> Etanol</label>
+                <label><input type="radio" name="tipoCombustivel" value="etanol"> Etanol</label>
 
-                <label><input type="radio" name="combustivel" value="bicombustivel"> Bicombustível</label>
+                <label><input type="radio" name="tipoCombustivel" value="bicombustivel"> Bicombustível</label>
 
-                <label><input type="radio" name="combustivel" value="hibrido"> Híbrido</label>
+                <label><input type="radio" name="tipoCombustivel" value="hibrido"> Híbrido</label>
 
-                <label><input type="radio" name="combustivel" value="eletrico"> Elétrico</label>
+                <label><input type="radio" name="tipoCombustivel" value="eletrico"> Elétrico</label>
 
             </div>
             <br>
@@ -69,6 +70,6 @@
     </div>
 </div>
     
-    <script src="js/script.js"></script>
+    
 </body>
 </html>
