@@ -1,5 +1,5 @@
-const salvarArquivo = async (objformulário) => {
-    console.log(objformulário)
+const salvarArquivo = async (objformulario) => {
+    console.log(objformulario)
     const endPoint = 'https://localhost:7123/api/Formulário';
 
     try {
@@ -7,7 +7,7 @@ const salvarArquivo = async (objformulário) => {
             endPoint, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(objformulário)
+            body: JSON.stringify(objformulario)
         })
 
         if (resposta.ok) {
